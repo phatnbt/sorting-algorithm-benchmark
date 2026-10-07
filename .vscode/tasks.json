@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C++ (MSVC)",
+      "type": "process",
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": ["/d", "/c", "${workspaceFolder}\\build_cpp.cmd", "${file}", "${fileBasenameNoExtension}"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$msCompile"]
+    },
+    {
+      "label": "Build and run C++",
+      "type": "process",
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": ["/d", "/c", "${workspaceFolder}\\build_and_run.cmd", "${file}", "${fileBasenameNoExtension}"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$msCompile"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+build/
+build_cpp.cmd
+build_and_run.cmd
+*.obj
+*.exe
+*.pdb
+*.ilk
+~$*.docx
+report/Sorting_Report.docx
+report/Sorting_Report_Final.docx
+report/Sorting_Research_Report.docx
+report/Sorting_Research_Report.pdf
+report/Sorting_Report_25521363.pdf
