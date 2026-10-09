@@ -29,11 +29,20 @@ Mỗi file là một chương trình độc lập. Thời gian sắp xếp của
 Ví dụ với QuickSort trong Developer Command Prompt của Visual Studio:
 
 ```bat
-cl /nologo /EHsc /std:c++17 quick_sort.cpp
-quick_sort.exe
+build_and_run.cmd quick_sort.cpp quick_sort
 ```
 
-Để chạy thuật toán khác, thay `quick_sort.cpp` bằng tên file tương ứng.
+Các chương trình còn lại chạy bằng những lệnh sau:
+
+```bat
+build_and_run.cmd heap_sort.cpp heap_sort
+build_and_run.cmd merge_sort.cpp merge_sort
+build_and_run.cmd cpp_sort.cpp cpp_sort
+```
+
+Tệp `build_and_run.cmd` biên dịch chương trình bằng MSVC với tùy chọn `/O2` rồi
+chạy file `.exe` trong thư mục `build`. Kết quả dùng trong báo cáo là trung bình
+của 3 lần chạy cho từng thuật toán. Thời gian có thể dao động nhẹ tùy tải của máy.
 
 ## Kết quả và báo cáo
 
